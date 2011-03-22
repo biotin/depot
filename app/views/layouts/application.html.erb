@@ -19,9 +19,12 @@
       <a href="http://www..../faq">Questions</a><br />
 
       <a href="http://www..../news">News</a><br />
-      <a href="http://www..../contact">Contact</a><br />
-    </div>
+      <a href="http://www..../contact">Contact</a><br />       
+     </div>         
    <div id="main">
+       <div id="cart">
+        <%= render @cart %>
+      </div>
     <%= yield %>
   </div>
 </div>

@@ -173,3 +173,18 @@ display: inline;
   font-weight: bold;
   border-top: 1px solid #595;
 }
+
+/* Styles for the cart in the sidebar */
+ 
+
+#cart, #cart table {
+  font-size: smaller;
+  color:     black;
+  margin-right: 1px
+}
+ 
+#cart table {
+  border-top:    1px ;
+  border-bottom: 1px ;
+  margin-bottom: 10px;
+}
