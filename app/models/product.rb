@@ -1,7 +1,11 @@
 class Product < ActiveRecord::Base
  default_scope :order => 'title'
  has_many :line_items
+ has_many :orders, :through => :line_items
  before_destroy :ensure_not_referenced_by_any_line_item
+ 
+ cattr_reader :per_page
+ @@per_page = 1
  
  # ensure that there are no line items referencing this product
  def ensure_not_referenced_by_any_line_item
