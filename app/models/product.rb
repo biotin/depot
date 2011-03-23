@@ -5,7 +5,7 @@ class Product < ActiveRecord::Base
  before_destroy :ensure_not_referenced_by_any_line_item
  
  cattr_reader :per_page
- @@per_page = 1
+ @@per_page = 10
  
  # ensure that there are no line items referencing this product
  def ensure_not_referenced_by_any_line_item
