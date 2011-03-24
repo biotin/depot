@@ -87,7 +87,7 @@
 }
 
 #main {
-  margin-left: 17em;
+  margin-left: 14em;
   padding-top: 4ex;
   padding-left: 2em;
   background: white;
@@ -98,7 +98,7 @@
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  width: 5em;
+  width: 13em;
   background: #808080;
 }
 
@@ -123,8 +123,8 @@
 
 #store .entry img {
   width: 80px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   float: left;
 }
 
