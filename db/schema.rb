@@ -12,9 +12,19 @@
 
 ActiveRecord::Schema.define(:version => 20110324102924) do
 
+  create_table "books", :id => false, :force => true do |t|
+    t.integer "id",          :null => false
+    t.text    "title",       :null => false
+    t.integer "author_id"
+    t.date    "publication"
+  end
+
   create_table "carts", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "depot", :id => false, :force => true do |t|
   end
 
   create_table "line_items", :force => true do |t|
