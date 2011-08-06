@@ -24,4 +24,13 @@ class Product < ActiveRecord::Base
 	:with => %r{\.(gif|jpg|png)$}i,
 	:message => 'must be a URL for GIF, JPG or PNG image.'
 	}
+
+ def self.search(search)
+  if search
+   where('description || title LIKE?', "%#{search}%")
+  else
+   scoped
+  end
+ end
+
 end
